@@ -1,6 +1,7 @@
 
-# Predefined list of names
-GET_Names = ["Rohan", "Parth", "Sidd",]
+# filename.py
+
+GET_Names = ["Rohan", "Parth", "Sidd"]
 
 # Function to search for a name in the predefined group
 def search_name():
@@ -8,7 +9,7 @@ def search_name():
     
     # Check if the name is present in the predefined list of names
     if search_name in GET_Names:
-        print(f"'{search_name}' Yes,is present in the GET group!")
+        print(f"'{search_name}' Yes, is present in the GET group!")
     else:
         print(f"'{search_name}' is now become Associate Engineer - Firmware.")
 

@@ -1,12 +1,12 @@
-# test_search_name.py
+# input_script.py
 
 import subprocess
 
-# Function to run the search_name_script.py and simulate user input
+# Function to run the filename.py and simulate user input
 def run_script_with_input(name_to_search):
     # Run the script and pass the input through stdin
     result = subprocess.run(
-        ['python3', 'search_name_script.py'],  # This is the path to your script
+        ['python3', 'filename.py'],  # This is the path to your main script
         input=name_to_search + '\n',  # Simulating user input
         text=True,  # Treat the input and output as text (not bytes)
         capture_output=True  # Capture stdout and stderr
@@ -17,15 +17,15 @@ def run_script_with_input(name_to_search):
 
 # Test: Searching for a name that is present
 def test_name_found():
-    output = run_script_with_input("Sidd")
+    output = run_script_with_input("Sidd")  # Simulate searching for "Sidd"
     print("Test 1 - Name Found:")
-    print(output)  # This will print the result of searching for 'Bob'
+    print(output)  # Output should show that Sidd is present in the group
 
 # Test: Searching for a name that is not present
 def test_name_not_found():
-    output = run_script_with_input("Sanket")
+    output = run_script_with_input("Sanket")  # Simulate searching for "Sanket"
     print("Test 2 - Name Not Found:")
-    print(output)  # This will print the result of searching for 'George'
+    print(output)  # Output should show that Sanket is promoted to Associate Engineer
 
 if __name__ == "__main__":
     test_name_found()  # Run the test for a name found
