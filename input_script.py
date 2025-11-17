@@ -7,5 +7,5 @@ def run_task(input_value):
         print("Unknown input.")
 
 if __name__ == "__main__":
-    user_input = input("Please enter a value for the task: ")
+    user_input = 'Ashish'
     run_task(user_input)
