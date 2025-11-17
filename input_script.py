@@ -17,13 +17,13 @@ def run_script_with_input(name_to_search):
 
 # Test: Searching for a name that is present
 def test_name_found():
-    output = run_script_with_input("Bob")
+    output = run_script_with_input("Sidd")
     print("Test 1 - Name Found:")
     print(output)  # This will print the result of searching for 'Bob'
 
 # Test: Searching for a name that is not present
 def test_name_not_found():
-    output = run_script_with_input("George")
+    output = run_script_with_input("Sanket")
     print("Test 2 - Name Not Found:")
     print(output)  # This will print the result of searching for 'George'
 
