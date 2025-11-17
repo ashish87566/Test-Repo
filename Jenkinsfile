@@ -13,7 +13,7 @@ pipeline {
                 script {
                     // Create and activate virtual environment
                     sh 'python3 -m venv venv'
-                    sh '. venv/bin/activate && pip install -r requirements.txt'
+                    sh '. venv/bin/activate '
                 }
             }
         }
