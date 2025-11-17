@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the latest code from GitHub
-                git 'https://github.com/your-username/your-repository.git'
+                git 'https://github.com/ashish87566/Test-Repo.git'
             }
         }
 
@@ -19,7 +19,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run the Python script
-                sh 'python3 run_tests.py'
+                sh 'python3 input_script.py'
             }
         }
     }
