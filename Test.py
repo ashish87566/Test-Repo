@@ -2,7 +2,7 @@ import subprocess
 
 def run_main(name_to_search):
     try:
-        # Run the Main.py script and pass the name as a command-line argument
+        # Run the Main.py script with the given name
         result = subprocess.run(
             ['python3', 'Main.py', name_to_search],  # Run Main.py with the name as an argument
             check=True,  # Will raise CalledProcessError if the command fails
@@ -18,6 +18,6 @@ def test_name(name_to_search):
     print(f"Running test for: {name_to_search}")
     run_main(name_to_search)
 
-# Run the test for a specific name (e.g., 'Sidd', 'John', etc.)
+# Run the test for specific names
 test_name('Sidd')  # Test with 'Sidd'
 test_name('John')  # Test with 'John'
