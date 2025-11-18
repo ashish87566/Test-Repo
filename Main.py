@@ -1,7 +1,7 @@
 import argparse
 
 # Define the list of names in the GET group
-GET_Names = ["Parth", "Sidd"]
+GET_Names = ["Parth", "Sidd" , "Rohan"]
 
 # Function to search for a name in the predefined group
 def search_name(search_name):

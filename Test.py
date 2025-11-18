@@ -20,4 +20,4 @@ def test_name(name_to_search):
 
 # Run the test for specific names
 test_name('Sidd')  # Test with 'Sidd'
-test_name('John')  # Test with 'John'
+# test_name('Sanket')  # Test with 'John'

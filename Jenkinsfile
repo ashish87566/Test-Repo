@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define the list of names to test
-        NAMES_TO_TEST = "Sidd,John,Parth"  // Add or modify names as needed
+        NAMES_TO_TEST = "Sidd,Sanket,Parth"  // Add or modify names as needed
     }
 
     stages {
