@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Run the Python script within the virtual environment
-                    sh '. venv/bin/activate && python3 input_script.py'
+                    sh '. venv/bin/activate && python3 Main.py'
                 }
             }
         }
