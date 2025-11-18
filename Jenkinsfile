@@ -14,16 +14,6 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                script {
-                    // Create a virtual environment and install dependencies (if any)
-                    sh 'python3 -m venv venv'  // Create a Python virtual environment
-                    sh '. venv/bin/activate && pip install -r requirements.txt'  // Install dependencies from requirements.txt
-                }
-            }
-        }
-
         stage('Run Tests') {
             steps {
                 script {
@@ -33,7 +23,7 @@ pipeline {
                     // Loop through each name and run Test.py
                     names.each { name ->
                         // Run the Test.py script for each name
-                        sh ". venv/bin/activate && python3 Test.py ${name}"
+                        sh "python3 Test.py ${name}"
                     }
                 }
             }
